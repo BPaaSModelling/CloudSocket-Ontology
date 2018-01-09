@@ -10,6 +10,17 @@
 
 <http://ikm-group.ch/archimeo/apqc>
   rdf:type owl:Ontology ;
+  cc:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
+  cc:license "This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License."@en ;
+  dc:contributor "Knut Hinkelmann"^^xsd:string ;
+  dc:contributor "Emanuele Laurenzi"^^xsd:string ;
+  dc:creator "Benjamin Lammel"^^xsd:string ;
+  dc:description "The APQC Ontology."@en ;
+  dc:issued "2017-02-01"^^xsd:date ;
+  dc:publisher <http://www.fhnw.ch/business> ;
+  dc:publisher "University of Applied Sciences Northwestern Switzerland FHNW"@en ;
+  dc:rights "Copyright 2018 FHNW"^^xsd:string ;
+  dc:title "The APQC Ontology"@en ;
   owl:versionInfo "Version 2.2" ;
 .
 <http://ikm-group.ch/archimeo/apqc#10_0_Acquire_Construct_and_Manage_Assets_19207>

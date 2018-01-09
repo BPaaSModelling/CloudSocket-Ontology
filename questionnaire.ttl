@@ -11,6 +11,19 @@
 
 <http://ikm-group.ch/archiMEO/questionnaire>
   rdf:type owl:Ontology ;
+  cc:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
+  cc:license "This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License."@en ;
+  dc:contributor "Knut Hinkelmann"^^xsd:string ;
+  dc:contributor "Benjamin Lammel"^^xsd:string ;
+  dc:contributor "Stefano Izzo"^^xsd:string ;
+  dc:creator "Emanuele Laurenzi"^^xsd:string ;
+  dc:description "The Questionnaire Ontology."@en ;
+  dc:issued "2017-07-01"^^xsd:date ;
+  dc:modified "2018-01-01"^^xsd:date ;
+  dc:publisher <http://www.fhnw.ch/business> ;
+  dc:publisher "University of Applied Sciences Northwestern Switzerland FHNW"@en ;
+  dc:rights "Copyright 2018 FHNW"^^xsd:string ;
+  dc:title "The Questionnaire Ontology"@en ;
   owl:imports <http://ikm-group.ch/archiMEO/bdata> ;
   owl:imports <http://ikm-group.ch/archimeo/bpaas> ;
   owl:versionInfo "Created with TopBraid Composer" ;
