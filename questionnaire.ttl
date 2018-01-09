@@ -61,6 +61,7 @@ questionnaire:Equals
 .
 questionnaire:Functional
   rdf:type owl:Class ;
+  questionnaire:hasOrderNumberForVisualization 0 ;
   rdfs:label "Functional" ;
   rdfs:subClassOf questionnaire:Question ;
 .
@@ -158,6 +159,11 @@ questionnaire:cloudServiceElementHasCloudServiceDomain
   rdfs:domain questionnaire:CloudServiceElement ;
   rdfs:range questionnaire:CloudServiceDomain ;
 .
+questionnaire:hasOrderNumberForVisualization
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "Order Number" ;
+  rdfs:range xsd:integer ;
+.
 questionnaire:questionHasAnnotationRelation
   rdf:type rdf:Property ;
   rdfs:domain questionnaire:Model ;
@@ -175,6 +181,11 @@ questionnaire:questionHasDomainAnswer
   rdfs:domain questionnaire:Question ;
   rdfs:label "questionHasDomainAnswer" ;
   rdfs:range owl:Class ;
+.
+questionnaire:questionHasRuleToApply
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain questionnaire:Question ;
+  rdfs:range xsd:string ;
 .
 questionnaire:questionIsAnswerdByAnswer
   rdf:type rdf:Property ;

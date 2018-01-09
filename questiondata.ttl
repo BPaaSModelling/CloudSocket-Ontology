@@ -616,6 +616,7 @@ questiondata:What_is_your_preferred_monthly_downtime_in_minutes
   rdf:type questionnaire:Performance ;
   rdf:type questionnaire:ValueInsert ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAvailabilityInPercent ;
+  questionnaire:questionHasRuleToApply "100-(((365*24*60)/12-?value)/(365*24*60/12)*100)" ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
   rdfs:label "What is your preferred monthly downtime in minutes?" ;
 .
@@ -632,6 +633,7 @@ questiondata:What_would_you_like_to_upload
 questiondata:Which_APQC_category_does_reflect_the_functional_requirement_you_want_to_express
   rdf:type questionnaire:Functional ;
   rdf:type questionnaire:SearchSelection ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAPQC ;
   questionnaire:searchSelectionHasSearchNamespace <http://ikm-group.ch/archimeo/apqc#AmericanProductivityAndQualityCenter> ;
   questionnaire:searchSelectionOnClassesInsteadOfInstances "true"^^xsd:boolean ;
   rdfs:label "Which APQC category does reflect the functional requirement you want to express?" ;
@@ -639,6 +641,7 @@ questiondata:Which_APQC_category_does_reflect_the_functional_requirement_you_wan
 questiondata:Which_Action_does_reflect_the_functional_requirement_you_want_to_express
   rdf:type questionnaire:Functional ;
   rdf:type questionnaire:SearchSelection ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAction ;
   questionnaire:searchSelectionHasSearchNamespace <http://ikm-group.ch/archimeo/fbpdo#Action> ;
   questionnaire:searchSelectionOnClassesInsteadOfInstances "true"^^xsd:boolean ;
   rdfs:label "Which Action does reflect the functional requirement you want to express?" ;
@@ -646,6 +649,8 @@ questiondata:Which_Action_does_reflect_the_functional_requirement_you_want_to_ex
 questiondata:Which_Object_does_reflect_the_functional_requirement_you_want_to_express
   rdf:type questionnaire:Functional ;
   rdf:type questionnaire:SearchSelection ;
+  questionnaire:hasOrderNumberForVisualization 0 ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasObject ;
   questionnaire:searchSelectionHasSearchNamespace <http://ikm-group.ch/archimeo/fbpdo#Object> ;
   questionnaire:searchSelectionOnClassesInsteadOfInstances "true"^^xsd:boolean ;
   rdfs:label "Which Object does reflect the functional requirement you want to express?" ;
@@ -661,4 +666,8 @@ questiondata:do_not_overwrite_events
 questionnaire:PerformanceYes
   rdf:type questionnaire:Answer ;
   rdfs:label "Yes" ;
+.
+questionnaire:hasOrderNumberForVisualization
+  rdfs:domain rdfs:Class ;
+  rdfs:domain owl:Thing ;
 .
